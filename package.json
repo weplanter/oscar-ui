@@ -44,5 +44,8 @@
         "rollup-plugin-node-resolve": "^4.2.3",
         "rollup-plugin-react-svg": "^2.1.0"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    }
 }
