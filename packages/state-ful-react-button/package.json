@@ -8,5 +8,8 @@
         "build": "rollup -c ../../rollup.config.js"
     },
     "author": "zrainma@sina.com",
-    "license": "MIT"
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    }
 }

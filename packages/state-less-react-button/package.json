@@ -11,5 +11,8 @@
         "lodash": "^4.4.0"
     },
     "author": "zrainma@sina.com",
-    "license": "MIT"
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    }
 }
