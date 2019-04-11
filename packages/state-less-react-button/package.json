@@ -10,5 +10,6 @@
     "dependencies": {
         "lodash": "^4.4.0"
     },
-    "author": "zrainma@sina.com"
+    "author": "zrainma@sina.com",
+    "license": "MIT"
 }
