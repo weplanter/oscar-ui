@@ -1,5 +1,5 @@
 {
-    "name": "state-less-react-button",
+    "name": "@oscar-ui/state-less-react-button",
     "version": "1.0.0",
     "description": "",
     "main": "dist/es/index.js",

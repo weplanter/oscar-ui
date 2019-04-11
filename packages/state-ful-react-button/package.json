@@ -1,5 +1,5 @@
 {
-    "name": "state-ful-react-button",
+    "name": "@oscar-ui/state-ful-react-button",
     "version": "1.0.0",
     "description": "",
     "main": "dist/es/index.js",
