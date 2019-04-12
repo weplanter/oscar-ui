@@ -69,28 +69,28 @@ function _possibleConstructorReturn(self, call) {
   return _assertThisInitialized(self);
 }
 
-var StateFulReactButton =
+var Button =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(StateFulReactButton, _Component);
+  _inherits(Button, _Component);
 
-  function StateFulReactButton() {
-    _classCallCheck(this, StateFulReactButton);
+  function Button() {
+    _classCallCheck(this, Button);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(StateFulReactButton).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Button).apply(this, arguments));
   }
 
-  _createClass(StateFulReactButton, [{
+  _createClass(Button, [{
     key: "render",
     value: function render() {
       var handleOnclick = this.props.handleOnclick;
       return React.createElement("button", {
         onClick: handleOnclick
-      }, "react stateful button");
+      }, "A REACT BUTTON");
     }
   }]);
 
-  return StateFulReactButton;
+  return Button;
 }(Component);
 
-export { StateFulReactButton };
+export { Button };

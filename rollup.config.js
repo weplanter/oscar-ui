@@ -7,11 +7,18 @@ import svg from 'rollup-plugin-react-svg';
 export default {
     input: `./src/index.js`,
     external: ['react', 'prop-types'],
-    output: {
-        file: `./dist/es/index.js`,
-        format: 'es'
-    },
-    name: 'my-library',
+    output: [
+        {
+            file: `./dist/es/index.js`,
+            format: 'es',
+            name: 'oscar-ui-es'
+        },
+        {
+            file: `./dist/umd/index.js`,
+            format: 'umd',
+            name: 'oscar-ui-umd'
+        }
+    ],
     plugins: [
         resolve(),
         filesize(),
