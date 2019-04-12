@@ -93,4 +93,4 @@ function (_Component) {
   return Button;
 }(Component);
 
-export { Button };
+export default Button;

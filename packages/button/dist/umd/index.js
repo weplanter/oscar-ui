@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'react'], factory) :
-  (global = global || self, factory(global['oscar-ui-umd'] = {}, global.React));
-}(this, function (exports, React) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
+  typeof define === 'function' && define.amd ? define(['react'], factory) :
+  (global = global || self, global['oscar-ui-umd'] = factory(global.React));
+}(this, function (React) { 'use strict';
 
   var React__default = 'default' in React ? React['default'] : React;
 
@@ -99,8 +99,6 @@
     return Button;
   }(React.Component);
 
-  exports.Button = Button;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
+  return Button;
 
 }));
