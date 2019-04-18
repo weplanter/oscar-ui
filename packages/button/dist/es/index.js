@@ -85,6 +85,7 @@ function (_Component) {
     value: function render() {
       var handleOnclick = this.props.handleOnclick;
       return React.createElement("button", {
+        className: "oscar-ui-button",
         onClick: handleOnclick
       }, "A REACT BUTTON");
     }

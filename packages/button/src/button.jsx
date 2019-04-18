@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import './button.css';
 
 class Button extends Component {
     render() {
         const { handleOnclick } = this.props;
 
-        return <button onClick={handleOnclick}>A REACT BUTTON</button>;
+        return (
+            <button className="oscar-ui-button" onClick={handleOnclick}>
+                A REACT BUTTON
+            </button>
+        );
     }
 }
 

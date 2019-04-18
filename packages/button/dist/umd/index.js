@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
   typeof define === 'function' && define.amd ? define(['react'], factory) :
-  (global = global || self, global['oscar-ui-umd'] = factory(global.React));
+  (global = global || self, global['@oscarui'] = factory(global.React));
 }(this, function (React) { 'use strict';
 
   var React__default = 'default' in React ? React['default'] : React;
@@ -91,6 +91,7 @@
       value: function render() {
         var handleOnclick = this.props.handleOnclick;
         return React__default.createElement("button", {
+          className: "oscar-ui-button",
           onClick: handleOnclick
         }, "A REACT BUTTON");
       }
