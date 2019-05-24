@@ -91,7 +91,7 @@
       value: function render() {
         return React__default.createElement("div", {
           className: "oscar-ui-grid-item",
-          "data-id": this.props._id
+          "data-id": this.props['data-id']
         });
       }
     }]);
