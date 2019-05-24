@@ -1,6 +1,6 @@
 {
     "name": "@oscar-ui/button",
-    "version": "1.0.0-alpha.8",
+    "version": "1.0.0-alpha.9",
     "description": "a button component",
     "main": "dist/umd/index.js",
     "module": "dist/es/index.js",
