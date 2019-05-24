@@ -91,7 +91,7 @@
       value: function render() {
         return React__default.createElement("button", {
           className: "oscar-ui-button",
-          _id: this.props._id
+          "data-id": this.props._id
         }, "A REACT BUTTON");
       }
     }]);

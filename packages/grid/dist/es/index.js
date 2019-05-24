@@ -85,7 +85,7 @@ function (_Component) {
     value: function render() {
       return React.createElement("div", {
         className: "oscar-ui-grid",
-        _id: this.props._id
+        "data-id": this.props._id
       });
     }
   }]);

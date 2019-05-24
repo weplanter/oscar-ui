@@ -3,7 +3,7 @@ import './grid.css';
 
 class Button extends Component {
     render() {
-        return <div className="oscar-ui-grid" _id={this.props._id} />;
+        return <div className="oscar-ui-grid" data-id={this.props._id} />;
     }
 }
 
