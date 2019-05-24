@@ -22,24 +22,6 @@ function _createClass(Constructor, protoProps, staticProps) {
   return Constructor;
 }
 
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
     throw new TypeError("Super expression must either be null or a function");
@@ -101,9 +83,10 @@ function (_Component) {
   _createClass(Button, [{
     key: "render",
     value: function render() {
-      return React.createElement("button", _extends({
-        className: "oscar-ui-button"
-      }, this.props), "A REACT BUTTON");
+      return React.createElement("button", {
+        className: "oscar-ui-button",
+        _id: this.props._id
+      }, "A REACT BUTTON");
     }
   }]);
 
