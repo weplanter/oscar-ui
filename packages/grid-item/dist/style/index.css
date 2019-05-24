@@ -1,4 +1,5 @@
-.oscar-ui-button {
-    font-size: 26px;
-    background-color: blue;
+.oscar-ui-grid-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }

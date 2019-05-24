@@ -83,11 +83,9 @@ function (_Component) {
   _createClass(Button, [{
     key: "render",
     value: function render() {
-      var handleOnclick = this.props.handleOnclick;
-      return React.createElement("button", {
-        className: "oscar-ui-button",
-        onClick: handleOnclick
-      }, "A REACT BUTTON");
+      return React.createElement("div", {
+        className: "oscar-ui-grid-item"
+      });
     }
   }]);
 
