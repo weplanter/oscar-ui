@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import './grid.css';
 
-class Button extends Component {
+class Grid extends Component {
     render() {
+        const { props } = this;
         return (
-            <div className="oscar-ui-grid" data-id={this.props['data-id']}>
+            <div
+                className="oscar-ui-grid"
+                {...props}
+            >
                 {this.props.children}
             </div>
         );
     }
 }
 
-export default Button;
+export default Grid;

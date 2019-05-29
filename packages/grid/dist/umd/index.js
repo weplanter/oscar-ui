@@ -28,6 +28,24 @@
     return Constructor;
   }
 
+  function _extends() {
+    _extends = Object.assign || function (target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+
+      return target;
+    };
+
+    return _extends.apply(this, arguments);
+  }
+
   function _inherits(subClass, superClass) {
     if (typeof superClass !== "function" && superClass !== null) {
       throw new TypeError("Super expression must either be null or a function");
@@ -75,30 +93,30 @@
     return _assertThisInitialized(self);
   }
 
-  var Button =
+  var Grid =
   /*#__PURE__*/
   function (_Component) {
-    _inherits(Button, _Component);
+    _inherits(Grid, _Component);
 
-    function Button() {
-      _classCallCheck(this, Button);
+    function Grid() {
+      _classCallCheck(this, Grid);
 
-      return _possibleConstructorReturn(this, _getPrototypeOf(Button).apply(this, arguments));
+      return _possibleConstructorReturn(this, _getPrototypeOf(Grid).apply(this, arguments));
     }
 
-    _createClass(Button, [{
+    _createClass(Grid, [{
       key: "render",
       value: function render() {
-        return React__default.createElement("div", {
-          className: "oscar-ui-grid",
-          "data-id": this.props['data-id']
-        }, this.props.children);
+        var props = this.props;
+        return React__default.createElement("div", _extends({
+          className: "oscar-ui-grid"
+        }, props), this.props.children);
       }
     }]);
 
-    return Button;
+    return Grid;
   }(React.Component);
 
-  return Button;
+  return Grid;
 
 }));
