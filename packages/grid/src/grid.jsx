@@ -3,12 +3,8 @@ import './grid.css';
 
 class Grid extends Component {
     render() {
-        const { props } = this;
         return (
-            <div
-                className="oscar-ui-grid"
-                {...props}
-            >
+            <div className="oscar-ui-grid" data-id={this.props['data-id']}>
                 {this.props.children}
             </div>
         );

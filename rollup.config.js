@@ -44,7 +44,7 @@ const isProductionEnv = process.env.NODE_ENV === 'production';
 
 export default {
     input: `./src/index.js`,
-    external: ['react', 'prop-types'],
+    external: ['react', 'react-dom', 'prop-types'],
     output: [
         {
             file: `./dist/es/index.js`,
@@ -69,7 +69,7 @@ export default {
             // process: processLess
         }),
         babel({
-            exclude: 'node_modules/**',
+            exclude: '/node_modules/',
             presets: [
                 [
                     '@babel/preset-env',
